@@ -1,0 +1,46 @@
+{
+  "skill_name": "literature-in-depth-reading",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Analyze this paper for me: [Attention Is All You Need, Vaswani et al. 2017 — paste full text or provide URL]",
+      "expected_output": "Structured 6-point analysis covering Task (sequence-to-sequence transduction), Challenge (RNN sequential dependency, vanishing gradient), Insights (self-attention as global dependency mechanism), Novelty (multi-head attention, positional encoding), Potential Flaws (quadratic complexity, fixed-length context), Motivation (can we remove recurrence entirely and rely solely on attention?). Code section should point to official transformer implementations.",
+      "files": [],
+      "expectations": [
+        "Output contains all 6 sections: Task, Challenge, Insight & Novelty, Potential Flaw, Motivation, and Code",
+        "Task section formally defines input/output and constraints in plain text without LaTeX",
+        "Novelty section uses the exact three-part arrow format for each novelty point",
+        "Potential Flaw section covers at least 2 directions with root cause analysis",
+        "Motivation section contains at least one question in the 'prior methods do X, could we try Z' format",
+        "No hallucinated claims — all paper-based assertions are attributed to the paper",
+        "Code section either finds the official repo or states it was not found"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "帮我深度分析这篇论文：LoRA: Low-Rank Adaptation of Large Language Models",
+      "expected_output": "Full 6-point analysis in Chinese (since the user wrote in Chinese). Task: adapting large pretrained models to downstream tasks with minimal trainable parameters. Challenge: full fine-tuning cost, catastrophic forgetting, storage per task. Insight: weight updates during adaptation have low intrinsic rank. Novelty: injecting trainable low-rank decomposition matrices into each layer. Potential flaws: rank selection sensitivity, not all layers benefit equally. Motivation: if updates are low-rank, why train all parameters?",
+      "files": [],
+      "expectations": [
+        "Output is in Chinese throughout",
+        "Task section formalizes the problem: input (pretrained model + task data), output (adapted model), constraint (minimal new parameters)",
+        "Novelty uses the three-part arrow format adapted to Chinese",
+        "Insight 3.2 identifies the low-rank hypothesis as the core insight",
+        "Potential Flaw section explores rank sensitivity and layer heterogeneity as distinct directions",
+        "Code section references the official LoRA GitHub repository"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Analyze this paper and also I found the code here: https://github.com/some/repo — [paper about a novel graph neural network architecture]",
+      "expected_output": "6-point analysis of the GNN paper, plus a code section that uses the user-provided repository link, identifies the core GNN layer implementation, and explains it concisely.",
+      "files": [],
+      "expectations": [
+        "Code section uses the user-provided link, not a searched one",
+        "Code explanation points to specific file/class/function names from the actual repo",
+        "No fabricated code details — only what is verifiable in the repo",
+        "Domain expertise persona reflects GNN/graph learning field knowledge"
+      ]
+    }
+  ]
+}
