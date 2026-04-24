@@ -38,7 +38,7 @@ From then on, every chat / call inside that Project / GPT / Gem already knows th
 
 ## Example prompts
 
-English or Chinese — the output matches your language.
+Any language, the output matches your language.
 
 - `analyze this paper`
 - `what's the novelty here`
