@@ -8,11 +8,14 @@ Install once per platform. After that, just send the paper — no more copy-past
 
 ### Claude Code
 
-```bash
-git clone https://github.com/XuananLu/literature-In-depth-reading-skill.git ~/.claude/plugins/literature-in-depth-reading
+Inside Claude Code, run:
+
+```
+/plugin marketplace add XuananLu/literature-In-depth-reading-skill
+/plugin install literature-in-depth-reading@xuananlu
 ```
 
-The skill auto-triggers whenever you hand Claude Code a paper.
+The skill then auto-triggers whenever you hand Claude Code a paper.
 
 ### Other platforms (one-time setup)
 

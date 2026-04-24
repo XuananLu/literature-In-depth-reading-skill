@@ -1,0 +1,14 @@
+{
+  "name": "xuananlu",
+  "owner": {
+    "name": "XuananLu",
+    "email": "annicalulu@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "literature-in-depth-reading",
+      "source": "./",
+      "description": "Deep structured analysis of academic papers using a first-principles, domain-expert framework."
+    }
+  ]
+}
