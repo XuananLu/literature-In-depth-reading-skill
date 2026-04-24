@@ -2,27 +2,30 @@
 
 A reusable prompt that makes any LLM read academic papers deeply, using a first-principles, domain-expert framework. Works with ChatGPT, Claude, Gemini, local models, or Claude Code as a native plugin.
 
-## The prompt
-
-The full prompt lives in [`skills/literature-in-depth-reading/SKILL.md`](skills/literature-in-depth-reading/SKILL.md). Copy the body (everything below the `---` frontmatter) and use it however your platform allows.
-
 ## Use
 
-### Option 1 — Any chat app (ChatGPT, Claude.ai, Gemini, …)
+Install once per platform. After that, just send the paper — no more copy-paste.
 
-Paste the prompt body as a custom instruction, system prompt, or first message. Then send the paper.
-
-### Option 2 — Any LLM API
-
-Use the prompt body as your `system` message. Send the paper as the `user` message.
-
-### Option 3 — Claude Code (native plugin)
-
-Clone into the plugin directory. The skill loads on next launch:
+### Claude Code (fully native, zero setup)
 
 ```bash
 git clone https://github.com/XuananLu/literature-In-depth-reading-skill.git ~/.claude/plugins/literature-in-depth-reading
 ```
+
+The skill auto-triggers whenever you hand Claude Code a paper.
+
+### Other platforms (one-time setup)
+
+Copy the body of [`skills/literature-in-depth-reading/SKILL.md`](skills/literature-in-depth-reading/SKILL.md) (everything below the `---` frontmatter) and paste it into the platform's persistent-instruction slot — once:
+
+- **Claude.ai** — create a Project → paste into Project instructions.
+- **ChatGPT** — create a Custom GPT → paste into Instructions.
+- **Gemini** — create a Gem → paste into Gem instructions.
+- **Any API** — put it in the `system` field of your requests.
+
+From then on, every chat / call inside that Project / GPT / Gem already knows the framework. Just send the paper.
+
+> One-off try without setup: paste the prompt body as the first message in a fresh chat, then send the paper.
 
 ## Supported inputs
 
