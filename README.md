@@ -6,7 +6,7 @@ A reusable prompt that makes any LLM read academic papers deeply, using a first-
 
 Install once per platform. After that, just send the paper — no more copy-paste.
 
-### Claude Code (fully native, zero setup)
+### Claude Code
 
 ```bash
 git clone https://github.com/XuananLu/literature-In-depth-reading-skill.git ~/.claude/plugins/literature-in-depth-reading
