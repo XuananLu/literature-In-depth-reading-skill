@@ -1,6 +1,4 @@
-# Literature In-Depth Reading
-
-![Literature In-Depth Reading](./image.png)
+# Literature In-Depth Reading <img src="./image.png" alt="Literature In-Depth Reading" height="32" />
 
 A reusable prompt that makes any LLM read academic papers deeply, using a first-principles, domain-expert framework. Works with ChatGPT, Claude, Gemini, local models, or Claude Code as a native plugin.
 
