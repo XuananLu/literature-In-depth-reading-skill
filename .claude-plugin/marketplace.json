@@ -7,7 +7,7 @@
   "plugins": [
     {
       "name": "literature-in-depth-reading",
-      "source": "./",
+      "source": "./plugins/literature-in-depth-reading",
       "description": "Deep structured analysis of academic papers using a first-principles, domain-expert framework."
     }
   ]
