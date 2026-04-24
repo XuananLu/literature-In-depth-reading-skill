@@ -17,7 +17,7 @@ Inside Claude Code, run:
 
 The skill then auto-triggers whenever you hand Claude Code a paper.
 
-### Other platforms (one-time setup)
+### Other platforms
 
 Copy the body of [`skills/literature-in-depth-reading/SKILL.md`](skills/literature-in-depth-reading/SKILL.md) (everything below the `---` frontmatter) and paste it into the platform's persistent-instruction slot — once:
 
